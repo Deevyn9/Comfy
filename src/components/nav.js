@@ -2,9 +2,15 @@ import React from 'react'
 
 const Nav = () => {
   return (
-    <div>
-      sewwwy
-    </div>
+    <>
+      <header>
+          <nav>
+            <img src="" alt="" />            
+            <div className="theme-toggle"></div>
+            <div className="cart"></div>
+          </nav> 
+      </header> 
+    </>
   )
 }
 
