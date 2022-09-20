@@ -1,19 +1,28 @@
 import React from "react";
+import Logo from "../assets/logo.jpg"
+import DarkLogo from "../assets/logodark.jpg"
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 // import LightModeIcon from "@mui/icons-material/LightMode";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 
-const Nav = () => {
+const Nav = ({darkMode, onClick}) => {
   return (
     <>
-      <header>
+      <header className={`${darkMode ? "darkmode" : ""}`}>
         <nav>
-          <h1>Nav Logo</h1>
-          {/* <img src="" alt="" /> */}
+          <div className={`logo-div ${darkMode ? "darkmode" : ""}`}>
+            {/* {`${
+              darkMode ? (
+                <img src={Logo} alt="Splash Zone" height={80} />
+              ) : (
+                <img src={DarkLogo} alt="Splash Zone" height={80} />
+              )
+            }`} */}
+          </div>
           <div className="cart-toggle">
-            <div className="theme-toggle">
+            <div className="theme-toggle" onClick={onClick}>
               <DarkModeIcon />
-              <p>Dark Mode</p>
+              <p>Dark</p>
             </div>
             <div className="cart">
               <ShoppingBagIcon />

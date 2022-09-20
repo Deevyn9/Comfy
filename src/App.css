@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -5,22 +7,59 @@
     scroll-behavior: smooth;
 }
 
+:root {
+    --main-color: #e76909;
+    --box-shadow: #e769095c;
+    --dark-shadow: #e769097c;
+    --dark-bg: #000000;
+}
+
 body {
     width: 100vw;
-    /* min-height: 100vh; */
+    font-family: 'DM Sans', sans-serif;
 }
 
 header {
+    position: fixed;
     width: 100%;
-    padding: 20px;
-    box-shadow: 0px 3px 15px rgba(231, 105, 9, 0.361);
+    padding: 5px 20px;
+    box-shadow: 0px 3px 15px var(--box-shadow);
+}
+
+.App {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.App.darkmode {
+    background-color: var(--dark-bg);
+    color: white;
+}
+
+header.darkmode {
+       box-shadow: 0px 3px 15px var(--dark-shadow);
 }
 
 header nav {
-    background-color: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo-div {
+    background: url(./assets/logo.jpg) no-repeat;
+    height: 80px;
+    width: 80px;
+    background-position: center;
+    background-size: contain;
+}
+
+.logo-div.darkmode {
+    background: url(./assets/logodark.jpg) no-repeat;
+    height: 80px;
+    width: 80px;
+    background-position: center;
+    background-size: contain;
 }
 
 .cart-toggle {
@@ -30,12 +69,16 @@ header nav {
 
 .theme-toggle {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     gap: 2px;
+    cursor: pointer;
 }
 
 .theme-toggle p {
     font-weight: 700;
 }
 
+main {
+    position: relative;
+    top: 100px;
+}
