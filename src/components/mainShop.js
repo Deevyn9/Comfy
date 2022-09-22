@@ -11,6 +11,25 @@ const MainShop = () => {
           <img src={HeroLandcape} alt="" className="hero-img landscape" />
         </div>
         <div className="overlay"></div>
+        <h2 className="hero-heading">
+          <span className="hi">Hi,</span>
+          <br />
+          Welcome to
+          <br />
+          <span className="comfy">Comfy</span>
+        </h2>
+      </div>
+      <div className="intro">
+        <h2>At Comfy,</h2>
+        <p>
+          We provide a wide variety of couches that would have you{" "}
+          <span className="comfy">comfy.</span>
+        </p>
+        <p>Let us handle yoour comfort today</p>
+        <div className="btn-div">
+          <button>Shop</button>
+          <button>About Us</button>
+        </div>
       </div>
     </>
   );

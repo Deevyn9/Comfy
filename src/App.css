@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 * {
     padding: 0;
@@ -76,9 +77,60 @@ main {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: red;
+    background-color: rgba(0, 0, 0, 0.472);
+    top: 0;
 }
 
+.hero-heading {
+    position: absolute;
+    top: 30%;
+    color: white;
+    right: 0;
+    left: 0;
+    max-width: 300px;
+    max-height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.intro h2 {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.btn-div {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn-div button {
+    background-color: black;
+    color: white;
+    width: 140px;
+    height: 50px;
+    border-radius: 10px;
+    transition: all .2s ease;
+    font-weight: 700;
+}
+
+.btn-div button:hover {
+    background-color: transparent;
+    color: black;
+}
 
 @media (min-width: 700px) {
     header {
@@ -87,6 +139,39 @@ main {
 
     main {
         top: 100px;
+    }
+
+    .hero-heading {
+        top: 25%;
+        max-width: 90%;
+        font-size: 100px;
+        line-height: 120px;
+    }
+
+    .intro h2 {
+    font-size: 80px;
+}
+}
+
+@media (max-width: 320px) {
+    .intro {
+        padding: 30px 10px;
+    }
+
+    .btn-div {
+        max-width: 90%;
+    }
+
+    .btn-div button {
+        width: 45%;
+    }
+
+    .intro h2 {
+        font-size: 35px;
+    }
+
+    .intro p {
+        font-size: 18px;
     }
 }
 
