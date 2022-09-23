@@ -15,8 +15,7 @@
 body {
     width: 100vw;
     font-family: 'DM Sans', sans-serif;
-    height: 300vh;
-}
+    }
 
 header {
     position: fixed;
@@ -102,9 +101,8 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px 0 80px 0;
-    border: 2px solid red;
-}
+    padding: 40px 20px 80px 20px;
+    }
 
 .intro h2 {
     font-size: 50px;
@@ -135,11 +133,42 @@ main {
     color: black;
 }
 
-@media (min-width: 700px) {
-    header {
-        padding: 20px 100px;
-        }
+.featured {
+    padding: 40px 20px;
+    text-align: center;
+}
 
+.featured h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.featured-items {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid purple;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+.rectangle {
+    height: 400px;
+    width: 250px;
+    border: 2px solid red;
+}
+
+footer {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    top: 100px;
+    padding: 40px 20px;
+    color: white;
+}
+
+@media (min-width: 700px) {
     main {
         top: 100px;
     }
@@ -160,7 +189,17 @@ main {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 330px) {
+    header {
+        padding: 10px;
+    }
+
+    .hero-heading {
+        padding: 0 10px;
+        font-size: 40px;
+        top: 33%;
+    }
+
     .intro {
         padding: 30px 10px;
     }
@@ -174,11 +213,15 @@ main {
     }
 
     .intro h2 {
-        font-size: 35px;
+        font-size: 33px;
     }
 
     .intro p {
         font-size: 18px;
+    }
+
+    .featured h2 {
+        font-size: 30px;
     }
 }
 

@@ -31,6 +31,16 @@ const MainShop = () => {
           <button>About Us</button>
         </div>
       </div>
+      <div className="featured">
+        <h2>Deals this week</h2>
+        <div className="featured-items">
+          <div className="rectangle"></div>
+          <div className="rectangle"></div>
+          <div className="rectangle"></div>
+          <div className="rectangle"></div>
+          <div className="rectangle"></div>
+        </div>
+      </div>
     </>
   );
 }
