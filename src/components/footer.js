@@ -10,12 +10,18 @@ const Footer = () => {
         <div className="left">
           <h2>Comfy.</h2>
           <div className="socials">
-            <img src={Insta} alt="" width={30} />
-            <img src={Twitter} alt="" width={30} />
-            <img src={Pinterest} alt="" width={30} />
+            <a href="">
+              <img src={Insta} alt="" width={30} />
+            </a>
+            <a href="">
+              <img src={Twitter} alt="" width={30} />
+            </a>
+            <a href="">
+              <img src={Pinterest} alt="" width={30} />
+            </a>
           </div>
           <div className="sub">
-            <p>stay in the loop, when is our next sale</p>
+            <p>stay in the loop, when is our next sale?</p>
             <div className="main__sub">
               <input type="email" />
               <button>Subscribe</button>
