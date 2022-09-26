@@ -136,6 +136,7 @@ main {
 
 .cart__section, .about__section, .main__shop {
     min-height: 41vh;
+    padding: 20px;
 }
 
 .featured {
@@ -280,6 +281,22 @@ footer {
   margin-top: 100px;
 }
 
+.go-back button {
+    background-color: black;
+    border: none;
+    color: white;
+    height: 50px;
+    min-width: 100px;
+    padding: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.go-back button:hover {
+    background-color: #343431;
+}
+
 @media (min-width: 700px) {
   main {
     top: 80px;
@@ -337,11 +354,19 @@ footer {
 
   .btn-div {
     max-width: 90%;
+    }
+
+  .btn-div a {
+    width: 45%;
   }
 
   .btn-div button {
-    width: 45%;
+    width: 100%;
   }
+
+  .cart__section, .about__section, .main__shop {
+    padding: 10px;
+}
 
   .intro h2 {
     font-size: 33px;
