@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import HeroImage from "../assets/heroimage.jpg";
 import HeroLandcape from "../assets/heroimageLandscape.jpg"
 import Deal1 from "../assets/Deals/deal 1.jpg";
@@ -32,8 +33,12 @@ const MainShop = () => {
         </p>
         <p>Let us handle yoour comfort today</p>
         <div className="btn-div">
-          <button>Shop</button>
-          <button>About Us</button>
+          <Link to="/shop">
+            <button>Shop</button>
+          </Link>
+          <Link to="/about">
+            <button>About Us</button>
+          </Link>
         </div>
       </div>
       <div className="featured">

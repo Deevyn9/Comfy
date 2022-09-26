@@ -134,6 +134,10 @@ main {
   color: black;
 }
 
+.cart__section, .about__section, .main__shop {
+    min-height: 41vh;
+}
+
 .featured {
   padding: 40px 20px;
   text-align: center;
