@@ -20,6 +20,7 @@ const Nav = () => {
               <Link to="/cart">
                 <img src={Cart} alt="go to cart" />
               </Link>
+              <div className="cart-num">3</div>
             </div>
           </div>
         </nav>

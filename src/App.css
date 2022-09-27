@@ -51,6 +51,26 @@ header nav {
   gap: 10px;
 }
 
+.cart {
+    position: relative;
+}
+
+.cart-num {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    font-size: 13px;
+    font-weight: 700;
+}
+
 .cart img,
 .profile img {
   cursor: pointer;
@@ -363,6 +383,7 @@ footer {
 }
 
 .remove {
+    display: inline-block;
     text-decoration: underline;
     color: #959595;
     cursor: pointer;
@@ -377,7 +398,6 @@ footer {
     display: flex;
     flex-direction: column-reverse;
     gap: 10px;
-    /* justify-content: center; */
     align-items: center;
 }
 
