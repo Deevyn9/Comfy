@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.png";
 import Cart from "../assets/cart.png";
-import User from "../assets/user.png"
+import User from "../assets/user.png" 
 
-const Nav = () => {
+const Nav = ({count}) => {
   return (
     <>
       <header>
@@ -20,7 +20,7 @@ const Nav = () => {
               <Link to="/cart">
                 <img src={Cart} alt="go to cart" />
               </Link>
-              <div className="cart-num">3</div>
+              {count ? <div className="cart-num">{count}</div> : ""}
             </div>
           </div>
         </nav>
