@@ -8,6 +8,7 @@ import About from "./components/About";
 import Footer from "./components/footer";
 import Cart from "./components/Cart";
 import { useState } from "react";
+import ScrollToTop from "./components/scrollcontrol";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -53,6 +54,7 @@ function App() {
     <div className="App">
       <Nav count={cartItems.length} />
       <main>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<MainShop onClick={addItem} />} />
           <Route
