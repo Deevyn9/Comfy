@@ -52,9 +52,9 @@ function App() {
   }, []);
   return (
     <div className="App">
+      <ScrollToTop />
       <Nav count={cartItems.length} />
       <main>
-        <ScrollToTop />
         <Routes>
           <Route path="/" element={<MainShop onClick={addItem} />} />
           <Route
