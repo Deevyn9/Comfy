@@ -16,7 +16,7 @@ const Cart = ({cartItems, item, onRemove}) => {
         </Link>
       </div>
       <div className="main-cart">
-        {cartItems.length === 0 && <p>cart is empty</p>}
+        {cartItems.length === 0 && <p className='empty-cart'>cart is empty</p>}
         {cartItems.map((item) => (
           <div className="cart-item" key={item.id}>
             <div className="item-img">

@@ -491,7 +491,12 @@ footer {
 
 @media (min-width: 1500px) {
   .cart__section {
-    min-height: 100vh;
+    min-height: 70vh;
+  }
+
+  .empty-cart {
+    font-size: 40px;
+    font-weight: 500;
   }
 }
 
