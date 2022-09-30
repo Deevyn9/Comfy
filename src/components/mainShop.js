@@ -4,7 +4,7 @@ import HeroImage from "../assets/heroimage.jpg";
 import HeroLandcape from "../assets/heroimageLandscape.jpg"
 import Deals from './Deals';
 
-const MainShop = ({onClick}) => {
+const MainShop = () => {
   return (
     <>
       <div className="hero">
@@ -37,7 +37,7 @@ const MainShop = ({onClick}) => {
           </Link>
         </div>
       </div>
-      <Deals onClick={onClick}/>
+      <Deals/>
     </>
   );
 }

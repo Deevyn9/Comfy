@@ -113,7 +113,7 @@ main {
   margin-right: auto;
   text-align: center;
   font-size: 50px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .intro {
@@ -127,8 +127,26 @@ main {
 
 .intro h2 {
   font-size: 50px;
-  font-weight: 100;
+  font-weight: 400;
   margin-bottom: 20px;
+}
+
+.main__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.main__about img {
+  max-width: 80%;
+}
+
+.main__about p {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 100%;
 }
 
 .btn-div {
@@ -155,7 +173,7 @@ main {
 }
 
 .cart__section, .about__section, .main__shop {
-    min-height: 41vh;
+    min-height: 43vh;
     padding: 20px;
 }
 
@@ -165,8 +183,8 @@ main {
 }
 
 .featured h2 {
-  font-size: 40px;
-  font-weight: 100;
+  font-size: 50px;
+  font-weight: 400;
 }
 
 .featured-items {
@@ -253,6 +271,11 @@ main {
     margin-bottom: 10px;
 }
 
+.prod-name h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .old-price {
     color: gray;
     text-decoration: line-through;
@@ -317,6 +340,7 @@ footer {
   height: 35px;
   width: 27%;
   background-color: white;
+  font-size: 14px;
   font-weight: 700;
   border-radius: 5px;
 }
@@ -369,9 +393,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    border: 1px solid #343431;
-    border-left: none;
-    border-right: none;
+    border-bottom: 1px solid #343431;
 }
 
 .item-img {
@@ -408,6 +430,7 @@ footer {
 
 .item-name {
     margin-bottom: 5px;
+    font-weight: 500;
 }
 
 .remove {
@@ -434,6 +457,33 @@ footer {
     font-weight: 700;
 }
 
+.summary {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flat {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;  
+}
+
+.summary button {
+  background-color: black;
+  color: white;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+  height: 60px;
+  outline: none;
+  }
+
+
 @media (min-width: 700px) {
   main {
     top: 80px;
@@ -446,6 +496,10 @@ footer {
     line-height: 120px;
   }
 
+  .main__about p {
+    max-width: 600px;
+  }
+
   .intro h2 {
     font-size: 70px;
   }
@@ -456,6 +510,11 @@ footer {
 
   .item-name {
     font-size: 20px;
+  }
+
+  .summary {
+    margin-top: 50px;
+    max-width: 500px;
   }
 }
 

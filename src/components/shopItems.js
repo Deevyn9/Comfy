@@ -11,7 +11,7 @@ const shopItems = ({ product, item, onRemove, onClick }) => {
             <h3>{item.name}</h3>
           </div>
           <div className="prod-price">
-            <p>{item.Price}</p>
+            <p>${item.Price}</p>
           </div>
         </div>
         <div className="button">

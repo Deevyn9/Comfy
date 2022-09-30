@@ -26,18 +26,50 @@ const Cart = ({cartItems, item, onRemove}) => {
               <div className="item-name">
                 <p>{item.name}</p>
               </div>
-              <div className="remove">remove</div>
+              <div className="remove" onClick={() => onRemove(item)}>
+                remove
+              </div>
             </div>
             <div className="quan-price">
-              <div className="quantity">
-               Qty({item.qty})
-              </div>
+              <div className="quantity">Qty({item.qty})</div>
               <div className="item-price">
                 <p>${item.qty * item.Price.toFixed(2)}</p>
               </div>
             </div>
           </div>
         ))}
+        {cartItems.length !== 0 && (
+          <div className='summary'>
+            <div className="flat">
+              <div>Items price</div>
+              <div>
+                <strong>${itemsPrice.toFixed(2)}</strong>
+              </div>
+            </div>
+            <div className="flat">
+              <div>Tax price</div>
+              <div>
+                <strong>${taxPrice.toFixed(2)}</strong>
+              </div>
+            </div>
+            <div className="flat">
+              <div >Shipping price</div>
+              <div >
+                <strong>${shippingPrice.toFixed(2)}</strong>
+              </div>
+            </div>
+            <div className="flat">
+              <div >Total price</div>
+              <div >
+                <strong>${totalPrice.toFixed(2)}</strong>
+              </div>
+            </div>
+            <hr />
+              <button onClick={() => alert("Implement Checkout")}>
+                Checkout
+              </button>
+          </div>
+        )}
       </div>
     </div>
   );

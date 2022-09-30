@@ -7,7 +7,7 @@ export default [
   },
   {
     id: 2,
-    name: "Orange cloth sofa with a throw pillow",
+    name: "Orange cloth sofa with throw pillow",
     src: "https://images.unsplash.com/photo-1567016432779-094069958ea5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c29mYXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60",
     Price: 600,
   },
