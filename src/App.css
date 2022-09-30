@@ -489,6 +489,12 @@ footer {
   outline: none;
   }
 
+@media (min-width: 1500px) {
+  .cart__section {
+    min-height: 100vh;
+  }
+}
+
 
 @media (min-width: 700px) {
   main {
