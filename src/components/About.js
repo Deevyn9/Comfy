@@ -17,18 +17,18 @@ const About = () => {
         />
         <p>
           <span>
-            We launched The Pillow Drop as we were frustrated with the lack of
-            chic and statement pillows to brighten up our living space that were
+            We launched Comfy as we were frustrated with the lack of
+            Elegant and statement Furniture to brighten up our living space that were
             within our price range!
           </span>
           <span>
             We always loved needlepoint but wanted to redefine the market with a
-            unique, colourful and playful design. It was important for our
-            pillows to also be affordable compared to what is currently on that
+            unique, colourful and elegant Furniture. It was important for our
+            various furniture to also be affordable compared to what is currently on that
             market, as we want our cushions to be accessible to everyone! We
             hope you love them as much as we do!
           </span>
-          <span>The Pillow Drop x</span>
+          <span>Comfy x</span>
         </p>
       </div>
     </div>
