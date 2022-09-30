@@ -504,11 +504,11 @@ footer {
     max-width: 600px;
   }
 
-  .intro h2 {
+  .intro h2, .main__about h3 {
     font-size: 70px;
   }
 
-  .intro p {
+  .intro p, .main__about p {
     font-size: 20px;
   }
 

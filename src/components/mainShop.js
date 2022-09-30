@@ -24,7 +24,7 @@ const MainShop = () => {
       <div className="intro">
         <h2>At Comfy,</h2>
         <p>
-          We provide a wide variety of couches that would have you{" "}
+          We provide a wide variety of furniture that would have you{" "}
           <span className="comfy">comfy.</span>
         </p>
         <p>Let us handle yoour comfort today</p>
