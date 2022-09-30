@@ -1,4 +1,4 @@
-export default [
+const shopData = [
   {
     id: 1,
     name: "Orange leather couch with white Table",
@@ -90,3 +90,5 @@ export default [
     Price: 900,
   },
 ];
+
+export default shopData;
